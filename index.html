@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gourav's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS for Portfolio */
+
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+    }
+    p {
+      line-height: 1.6;
+    }
+
+    /* Sticky Navigation Bar */
+    .navbar {
+      transition: background-color 0.3s ease-in-out;
+    }
+    .navbar.navbar-dark.sticky-top {
+      background-color: #343a40 !important;
+    }
+    .navbar.navbar-dark.sticky-top .navbar-brand {
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #fff;
+    }
+
+    /* Hero Section */
+    #hero {
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+      background-image: url('images/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    #hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    /* About Section */
+    #about {
+      padding: 100px 0;
+    }
+    #about .personal-picture {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+
+    /* Projects Section */
+    #projects {
+      padding: 100px 0;
+    }
+    #projects .project-image {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    #projects .project h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    /* Skills Section */
+    #skills {
+      padding: 100px 0;
+    }
+    #skills .skill-image {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+
+    /* Contact Me Section */
+    #contact {
+      padding: 100px 0;
+    }
+    #contact form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+    }
+    #contact form .form-group {
+      margin-bottom: 20px;
+    }
+    #contact form textarea {
+      resize: none;
+    }
+    #contact form button {
+      background-color: #007bff;
+      width: 100%;
+    }
+    .social-icon img {
+      width: 40px;
+      margin-right: 20px;
+      transition: transform 0.3s;
+    }
+    .social-icon img:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sticky Navigation Bar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Gourav's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm Gourav, a passionate data scientist.</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/about.jpg" alt="Personal Picture" class="personal-picture mx-auto d-block">
+      </div>
+      <div class="col-md-6">
+        <h2>About Me</h2>
+        <p>My name is Gourav, and I'm a data scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
+        <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
+        <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="project">
+          <img src="images/project1.jpg" alt="Project 1" class="project-image">
+          <h3>Project Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="project">
+          <img src="images/project2.jpg" alt="Project 2" class="project-image">
+          <h3>Project Title 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="project">
+          <img src="images/project3.jpg" alt="Project 3" class="project-image">
+          <h3>Project Title 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="skill">
+          <img src="images/skill1.png" alt="Skill 1" class="skill-image">
+          <h3>Data Analysis</h3>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill">
+          <img src="images/skill2.png" alt="Skill 2" class="skill-image">
+          <h3>Machine Learning</h3>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill">
+          <img src="images/skill3.png" alt="Skill 3" class="skill-image">
+          <h3>Data Visualization</h3>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill">
+          <img src="images/skill4.png" alt="Skill 4" class="skill-image">
+          <h3>Python Programming</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 mx-auto">
+        <h3 class="text-center mb-4">Follow Me</h3>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="social-icon"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+          <a href="#" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a>
+          <a href="#" class="social-icon"><img src="icons/github.png" alt="GitHub"></a>
+          <a href="#" class="social-icon"><img src="icons/medium.png" alt="Medium"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
