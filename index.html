@@ -7,109 +7,12 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <style>
-    /* Custom CSS for Portfolio */
-
-    /* General Styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #343a40;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: bold;
-    }
-    p {
-      line-height: 1.6;
-    }
-
-    /* Sticky Navigation Bar */
-    .navbar {
-      transition: background-color 0.3s ease-in-out;
-    }
-    .navbar.navbar-dark.sticky-top {
-      background-color: #343a40 !important;
-    }
-    .navbar.navbar-dark.sticky-top .navbar-brand {
-      font-weight: bold;
-    }
-    .navbar-nav .nav-link {
-      font-weight: bold;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #fff;
-    }
-
-    /* Hero Section */
-    #hero {
-      padding: 100px 0;
-      text-align: center;
-      color: #fff;
-      background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/a6b23ba0-f57d-4b1b-997e-31caa6f1272b.jpg?raw=true');
-      background-size: cover;
-      background-position: center;
-    }
-    #hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-    }
-    #hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    /* About Section */
-    #about {
-      padding: 100px 0;
-    }
-    #about .personal-picture {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-bottom: 30px;
-    }
-
-    /* Projects Section */
-    #projects {
-      padding: 100px 0;
-    }
-    #projects .project-image {
-      max-width: 100%;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-    #projects .project h3 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    /* Skills Section */
-    #skills {
-      padding: 100px 0;
-    }
-    #skills .skill-image {
-      max-width: 100px;
-      margin-bottom: 20px;
-    }
-
-    /* Contact Me Section */
-    #contact {
-      padding: 100px 0;
-    }
-    #contact .social-icon img {
-      width: 40px;
-      margin-right: 20px;
-      transition: transform 0.3s;
-    }
-    #contact .social-icon img:hover {
-      transform: translateY(-5px);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Sticky Navigation Bar -->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#">Gourav's Portfolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,9 +27,6 @@
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
@@ -137,7 +37,7 @@
 <!-- Hero Section -->
 <section id="hero">
   <div class="container">
-    <div class="hero-text">
+    <div class="hero-content">
       <h1>Welcome To My Portfolio</h1>
       <p>I'm Gourav Yadav, A Passionate Data Scientist.</p>
     </div>
@@ -145,32 +45,28 @@
 </section>
 
 <!-- About Section -->
-<section id="about">
+<section id="about" class="bg-light py-5">
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-md-6">
-        <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Untitled%20design.png?raw=true" alt="Personal Picture" class="personal-picture mx-auto d-block" style="max-width: 100%; height: auto; max-height: 300px;">
+        <img src="images/about-me.jpg" class="img-fluid rounded-circle mb-4" alt="Personal Picture">
       </div>
       <div class="col-md-6">
         <h2>About Me</h2>
-        <p>My name is Gourav Yadav, And I'm a data scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
-        <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
-        <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
+        <p>My name is Gourav Yadav, and I'm a data scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions. I'm fascinated by the power of data to unravel complex problems and shape our understanding of the world.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Projects Section -->
-<!-- Projects Section -->
-<!-- Projects Section -->
-<section id="projects">
+<section id="projects" class="py-5">
   <div class="container">
     <h2 class="text-center mb-5">Projects</h2>
     <div class="row">
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/electric-car-2545290_640.png?raw=true" class="card-img-top" alt="Electric Vehicle Market Analysis">
+        <div class="card mb-4">
+          <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Electric Vehicle Market Analysis</h5>
             <p class="card-text">This project analyzes trends in Electric Vehicle (EV) registrations based on available data. It examines historical data, forecasts future registrations, and draws insights into the growth of the EV market.</p>
@@ -183,28 +79,15 @@
   </div>
 </section>
 
-<!-- Contact Me Section -->
-<section id="contact">
+<!-- Contact Section -->
+<section id="contact" class="bg-dark text-white py-5">
   <div class="container">
     <h2 class="text-center mb-5">Contact Me</h2>
-    <div class="row mt-5">
+    <div class="row">
       <div class="col-md-6 mx-auto">
         <div class="d-flex justify-content-center">
-          <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/linkedin.png?raw=true" alt="LinkedIn"></a>
-          <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/twitter.png?raw=true" alt="Twitter"></a>
-          <a href="https://github.com/Gourav4534" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/github.png?raw=true" alt="GitHub"></a>
-          <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/medium.png?raw=true" alt="Medium"></a>
-          <a href="mailto:gouravyadav684@gmail.com" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.png?raw=true" alt="Email"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+          <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="https://github.com/Gourav4534" class="social-icon"><img src="images/github.png" alt="GitHub"></a>
+          <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="images/medium.png" alt="Medium"></a>
+          <a
