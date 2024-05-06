@@ -7,7 +7,95 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom CSS for Portfolio */
+
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+    }
+    p {
+      line-height: 1.6;
+    }
+
+    /* Sticky Navigation Bar */
+    .navbar {
+      transition: background-color 0.3s ease-in-out;
+    }
+    .navbar.navbar-dark.sticky-top {
+      background-color: #343a40 !important;
+    }
+    .navbar.navbar-dark.sticky-top .navbar-brand {
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #fff;
+    }
+
+    /* Hero Section */
+    #hero {
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+      background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/a6b23ba0-f57d-4b1b-997e-31caa6f1272b.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+    }
+    #hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    /* About Section */
+    #about {
+      padding: 100px 0;
+    }
+    #about .personal-picture {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+
+    /* Projects Section */
+    #projects {
+      padding: 100px 0;
+    }
+    #projects .project-image {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    #projects .project h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Me Section */
+    #contact {
+      padding: 100px 0;
+    }
+    #contact .social-icon img {
+      width: 40px;
+      margin-right: 20px;
+      transition: transform 0.3s;
+    }
+    #contact .social-icon img:hover {
+      transform: translateY(-5px);
+    }
+  </style>
 </head>
 <body>
 
@@ -49,7 +137,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Untitled%20design.png?raw=true" class="img-fluid rounded-circle mb-4" alt="Personal Picture">
+        <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Untitled%20design.png?raw=true" class="img-fluid rounded-circle mb-4 personal-picture" alt="Personal Picture">
       </div>
       <div class="col-md-6">
         <h2>About Me</h2>
@@ -66,7 +154,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card mb-4">
-          <img src="project1.jpg" class="card-img-top" alt="Project 1">
+          <img src="project1.jpg" class="card-img-top project-image" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Electric Vehicle Market Analysis</h5>
             <p class="card-text">This project analyzes trends in Electric Vehicle (EV) registrations based on available data. It examines historical data, forecasts future registrations, and draws insights into the growth of the EV market.</p>
@@ -103,4 +191,3 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
