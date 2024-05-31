@@ -8,38 +8,44 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <style>
     /* Custom CSS for Portfolio */
 
     /* General Styles */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fa;
-      color: #343a40;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
     }
     h1, h2, h3, h4, h5, h6 {
-      font-weight: bold;
+      font-weight: 700;
     }
     p {
       line-height: 1.6;
     }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
 
-    /* Sticky Navigation Bar */
+    /* Navigation Bar */
     .navbar {
       transition: background-color 0.3s ease-in-out;
+      background-color: #343a40;
     }
-    .navbar.navbar-dark.sticky-top {
-      background-color: #343a40 !important;
+    .navbar .navbar-brand {
+      font-size: 1.75rem;
+      font-weight: 500;
     }
-    .navbar-brand {
-      font-size: 1.5rem;
-    }
-    .navbar-nav .nav-link {
+    .navbar .nav-link {
       font-size: 1.1rem;
+      color: #fff !important;
     }
-    .navbar-nav .nav-link:hover {
-      color: #fff;
+    .navbar .nav-link:hover {
+      color: #ffc107 !important;
     }
 
     /* Hero Section */
@@ -56,51 +62,75 @@
       margin-bottom: 20px;
     }
     #hero p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       margin-bottom: 30px;
     }
 
     /* About Section */
     #about {
       padding: 100px 0;
+      background-color: #fff;
     }
     #about .personal-picture {
-      max-width: 200px;
+      width: 250px;
       border-radius: 50%;
       margin-bottom: 30px;
+    }
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
     /* Projects Section */
     #projects {
       padding: 100px 0;
+      background-color: #f4f4f9;
+    }
+    #projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    #projects .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    #projects .card:hover {
+      transform: translateY(-10px);
     }
     #projects .project-image {
       width: 100%;
       height: 200px;
       object-fit: cover;
-      border-radius: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
     #projects .card-body {
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding: 20px;
     }
     #projects .card-title {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       margin-bottom: 15px;
     }
-    #projects .btn {
-      align-self: flex-end;
+    #projects .card-text {
+      flex-grow: 1;
     }
 
-    /* Contact Me Section */
+    /* Contact Section */
     #contact {
       padding: 100px 0;
+      background-color: #fff;
+    }
+    #contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      text-align: center;
     }
     #contact .social-icon img {
       width: 40px;
-      margin-right: 20px;
+      margin: 0 10px;
       transition: transform 0.3s;
     }
     #contact .social-icon img:hover {
@@ -111,7 +141,7 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
     <a class="navbar-brand" href="#">Gourav's Portfolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,22 +167,22 @@
 <section id="hero">
   <div class="container">
     <div class="hero-content">
-      <h1>Welcome To My Portfolio</h1>
+      <h1>Welcome to My Portfolio</h1>
       <p>I'm Gourav Yadav, A Passionate Data Scientist.</p>
     </div>
   </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="bg-light py-5">
+<section id="about">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Untitled%20design.png?raw=true" class="img-fluid rounded-circle mb-4 personal-picture" alt="Personal Picture">
+      <div class="col-md-6 text-center">
+        <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Untitled%20design.png?raw=true" class="img-fluid personal-picture" alt="Personal Picture">
       </div>
       <div class="col-md-6">
         <h2>About Me</h2>
-        <p>My Name Is Gourav Yadav, and I'm a Data Scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
+        <p>My name is Gourav Yadav, and I'm a Data Scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
         <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
         <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
       </div>
@@ -161,60 +191,40 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="py-5">
+<section id="projects">
   <div class="container">
-    <h2 class="text-center mb-5">Projects</h2>
+    <h2>Projects</h2>
     <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4 mb-4">
+        <div class="card">
           <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/electric-car-2545290_640.png?raw=true" class="card-img-top project-image" alt="Project 1">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Electric Vehicle Market Analysis</h5>
             <p class="card-text">This project analyzes trends in Electric Vehicle (EV) registrations based on available data. It examines historical data, forecasts future registrations, and draws insights into the growth of the EV market.</p>
-            <a href="https://github.com/Gourav4534/EVMarketSizeAnalysis" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <a href="https://github.com/Gourav4534/EVMarketSizeAnalysis" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4 mb-4">
+        <div class="card">
           <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download%20(3).jpg?raw=true" class="card-img-top project-image" alt="Project 2">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Customer Lifetime Value Prediction</h5>
             <p class="card-text">This project focuses on predicting the lifetime value of customers for a business based on their historical interactions. The project applies regression techniques to estimate the future value that a customer will bring to the business.</p>
-            <ul class="card-text">
-              <li>Data Loading and Exploration</li>
-              <li>Data Preprocessing</li>
-              <li>Customer Segmentation</li>
-              <li>LTV Calculation</li>
-              <li>Model Building:</li>
-              <ul>
-                <li>K-means Clustering</li>
-                <li>XGBoost Classifier</li>
-              </ul>
-              <li>Model Evaluation</li>
-            </ul>
-            <a href="https://github.com/Gourav4534/CodeClause_Data_Science_Internship/tree/main/Task_02" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <a href="https://github.com/Gourav4534/CodeClause_Data_Science_Internship/tree/main/Task_02" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4 mb-4">
+        <div class="card">
           <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/uber.jpg?raw=true" class="card-img-top project-image" alt="Project 3">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Uber Supply-Demand Gap Analysis</h5>
             <p class="card-text">This project analyzes the supply-demand gap for Uber services. It identifies trends and patterns in customer requests and driver availability to understand the dynamics of trip completion, cancellations, and instances where no cars are available.</p>
-            <ul class="card-text">
-              <li>Data Cleaning and Preprocessing</li>
-              <li>Request Status Segmentation</li>
-              <li>Supply-Demand Gap Analysis</li>
-              <li>Visualizations</li>
-              <li>Key Findings</li>
-            </ul>
-            <a href="https://github.com/yourusername/uber-supply-demand-gap-analysis" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <a href="https://github.com/yourusername/uber-supply-demand-gap-analysis" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
-      <!-- Add more project cards here -->
     </div>
   </div>
 </section>
@@ -222,16 +232,14 @@
 <!-- Contact Me Section -->
 <section id="contact">
   <div class="container">
-    <h2 class="text-center mb-5">Contact Me</h2>
+    <h2>Contact Me</h2>
     <div class="row mt-5">
-      <div class="col-md-6 mx-auto">
-        <div class="d-flex justify-content-center">
-          <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/linkedin.png?raw=true" alt="LinkedIn"></a>
-          <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/twitter.png?raw=true" alt="Twitter"></a>
-          <a href="https://github.com/Gourav4534" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/github.png?raw=true" alt="GitHub"></a>
-          <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/medium.png?raw=true" alt="Medium"></a>
-          <a href="mailto:gouravyadav684@gmail.com" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.png?raw=true" alt="Email"></a>
-        </div>
+      <div class="col-md-6 mx-auto text-center">
+        <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/linkedin.png?raw=true" alt="LinkedIn"></a>
+        <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/twitter.png?raw=true" alt="Twitter"></a>
+        <a href="https://github.com/Gourav4534" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/github.png?raw=true" alt="GitHub"></a>
+        <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/medium.png?raw=true" alt="Medium"></a>
+        <a href="mailto:gouravyadav684@gmail.com" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.png?raw=true" alt="Email"></a>
       </div>
     </div>
   </div>
@@ -243,3 +251,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
