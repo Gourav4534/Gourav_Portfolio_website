@@ -44,71 +44,75 @@
     .navbar .nav-link:hover {
       color: #ffc107 !important;
     }
-    /* Hero Section */
-    #hero {
-      padding: 100px 0;
-      text-align: center;
-      color: #fff;
-      background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
-      background-size: cover;
-      background-position: center;
-      height: 600px; /* Adjust the height as needed for a larger banner */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+   /* Hero Section */
+#hero {
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Adjust the height as needed for a larger banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    #hero h1 {
-      font-size: 5rem; /* Increase font size for larger text */
-      margin-bottom: 20px;
-    }
+#hero h1 {
+  font-size: 5rem; /* Increase font size for larger text */
+  margin-bottom: 20px;
+}
 
-    #hero p {
-      font-size: 1.5rem; /* Increase font size for larger text */
-      margin-bottom: 30px;
-      white-space: nowrap; /* Prevent line break */
-      overflow: hidden; /* Hide overflow */
-      border-right: 0.15em solid orange; /* Typing cursor effect */
-      animation: typing 3.5s steps(30, end);
-    }
+#hero p {
+  font-size: 1.5rem; /* Increase font size for larger text */
+  margin-bottom: 30px;
+  white-space: nowrap; /* Prevent line break */
+  overflow: hidden; /* Hide overflow */
+  border-right: 0.15em solid orange; /* Typing cursor effect */
+  animation: typing 3.5s steps(30, end);
+}
 
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
 
-    /* About Section */
-    #about {
-      padding: 100px 0;
-      background-color: #fff;
-    }
-    #about .personal-picture {
-      width: 200px; /* Increased size */
-      border-radius: 50%;
-      margin-bottom: 30px;
-    }
-    #about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #000; /* Text color black */
-    }
-    #about p {
-      font-size: 1.1rem; /* Increase text size slightly */
-      color: #000; /* Text color black */
-    }
-    .btn-primary {
-      background-color: #007bff;
-      border: none;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 1rem;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: #0056b3;
-    }
+
+/* About Section */
+#about {
+  padding: 100px 0;
+  background-color: #fff;
+}
+#about .personal-picture {
+  width: 150px; /* Adjust size to be small */
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000; /* Text color black */
+}
+#about p {
+  font-size: 1.1rem; /* Increase text size slightly */
+  color: #000; /* Text color black */
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
 
     /* Skills Section */
     #skills {
@@ -279,102 +283,84 @@
       <div class="col-md-6 text-center">
         <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Untitled%20design.png?raw=true" class="img-fluid personal-picture" alt="Personal Picture">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 text-left">
         <h2>About Me</h2>
-        <p>I am a passionate data scientist with a strong background in physics, chemistry, and mathematics. I am skilled in Python, SQL, machine learning, and data visualization. Currently, I am enhancing my skills in data science and AI. I believe in continuous learning and applying innovative ideas to solve real-world problems.</p>
-        <a href="resume.pdf" download class="btn btn-primary">Download Resume</a>
+        <p>My name is Gourav Yadav, and I'm a Data Scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
+        <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
+        <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
+        <a href="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/6a782d705a9b5b586ce13f886fee3f0c62c030ad/Gourav_Ds_Resume%20.pdf.pdf" class="btn btn-primary mt-3" download="Gourav_Ds_Resume.pdf">Download Resume</a>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- Skills Section -->
 <section id="skills">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="skills">
-          <h2 class="title">Skills</h2>
-          <div class="skills-content">
-            <div class="column">
-              <div class="skills-info">
-                <h4>Data Science</h4>
-                <div class="line">
-                  <div class="line-inner" style="width: 90%;"></div>
-                </div>
-              </div>
-              <div class="skills-info">
-                <h4>Machine Learning</h4>
-                <div class="line">
-                  <div class="line-inner" style="width: 85%;"></div>
-                </div>
-              </div>
-              <div class="skills-info">
-                <h4>Python</h4>
-                <div class="line">
-                  <div class="line-inner" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="skills-info">
-                <h4>SQL</h4>
-                <div class="line">
-                  <div class="line-inner" style="width: 75%;"></div>
-                </div>
-              </div>
-              <div class="skills-info">
-                <h4>Data Visualization</h4>
-                <div class="line">
-                  <div class="line-inner" style="width: 70%;"></div>
-                </div>
-              </div>
-              <div class="skills-info">
-                <h4>Mathematics</h4>
-                <div class="line">
-                  <div class="line-inner" style="width: 65%;"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <h2 class="title">My Skills</h2>
+    <div class="skills-content">
+      </div>
+      <div class="column right">
+        <div class="skill-category">
+          <h4>Languages & Tools</h3>
+          <p>Python | SQL | Git | GitHub</p>
+        </div>
+        <div class="skill-category">
+          <h4>Library & Framework</h3>
+          <p>Numpy | Pandas | Matplotlib | Seaborn | Bokeh | Plotly | Scikit-learn | Flask | TensorFlow | PyTorch</p>
+        </div>
+        <div class="skill-category">
+          <h4>Machine Learning</h3>
+          <p>Supervised Learning | Unsupervised Learning | Exploratory Data Analysis (EDA) | Deep Learning | Natural Language Processing (NLP) | Feature Engineering | Computer Vision</p>
+        </div>
+        <div class="skill-category">
+          <h4>Mathematics for ML & DL</h3>
+          <p>Statistics | Probability | Linear Algebra | Calculus</p>
+        </div>
+        <div class="skill-category">
+          <h4>Tools for Data Analysis & Visualization</h3>
+          <p>Tableau | Power BI | Excel</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Projects Section -->
 <section id="projects">
   <div class="container">
-    <h2 class="text-center">Projects</h2>
+    <h2>Projects</h2>
     <div class="row">
-      <div class="col-lg-4 col-md-6">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project1.jpg?raw=true" class="card-img-top project-image" alt="Project 1">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/electric-car-2545290_640.png?raw=true" class="card-img-top project-image" alt="Electric Vehicle Market Analysis">
           <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Description of Project 1.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
+            <h5 class="card-title">Electric Vehicle Market Analysis</h5>
+            <p class="card-text">This project analyzes trends in Electric Vehicle (EV) registrations based on available data. It examines historical data, forecasts future registrations, and draws insights into the growth of the EV market.</p>
+            <a href="https://github.com/Gourav4534/EVMarketSizeAnalysis" class="btn btn-primary" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project2.jpg?raw=true" class="card-img-top project-image" alt="Project 2">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download%20(3).jpg?raw=true" class="card-img-top project-image" alt="Customer Lifetime Value Prediction">
           <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Description of Project 2.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
+            <h5 class="card-title">Customer Lifetime Value Prediction</h5>
+            <p class="card-text">This project focuses on predicting the lifetime value of customers for a business based on their historical interactions. The project applies regression techniques to estimate the future value that a customer will bring to the business.</p>
+            <a href="https://github.com/Gourav4534/CodeClause_Data_Science_Internship/tree/main/Task_02" class="btn btn-primary" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project3.jpg?raw=true" class="card-img-top project-image" alt="Project 3">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/uber.jpg?raw=true" class="card-img-top project-image" alt="Uber Supply-Demand Gap Analysis">
           <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Description of Project 3.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
+            <h5 class="card-title">Uber Supply-Demand Gap Analysis</h5>
+            <p class="card-text">This project analyzes the supply-demand gap for Uber services. It identifies trends and patterns in customer requests and driver availability to understand the dynamics of trip completion, cancellations, and instances where no cars are available.</p>
+            <a href="https://github.com/Gourav4534/Uber_Supply_Demand_Gap_Analysis_Project" class="btn btn-primary" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
@@ -382,47 +368,37 @@
   </div>
 </section>
 
-<!-- Contact Section -->
+
+<!-- Contact Me Section -->
 <section id="contact">
   <div class="container">
-    <h2 class="text-center">Contact Me</h2>
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <form>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name">
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control" placeholder="Your Email">
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-        </form>
-        <div class="mt-4">
-          <div class="social-icon text-center">
-            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/linkedin.png?raw=true" alt="LinkedIn"></a>
-            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/github.png?raw=true" alt="GitHub"></a>
-            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/twitter.png?raw=true" alt="Twitter"></a>
-            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/medium.png?raw=true" alt="Medium"></a>
-          </div>
-        </div>
+    <h2>Contact Me</h2>
+    <div class="row mt-5">
+      <div class="col-md-6 mx-auto text-center">
+        <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/linkedin.png?raw=true" alt="LinkedIn"></a>
+        <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/twitter.png?raw=true" alt="Twitter"></a>
+        <a href="https://github.com/Gourav4534" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/github.png?raw=true" alt="GitHub"></a>
+        <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/medium.png?raw=true" alt="Medium"></a>
+        <a href="mailto:gouravyadav684@gmail.com" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.png?raw=true" alt="Email"></a>
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- Footer -->
-<footer class="py-4 text-center">
-  <div class="container">
-    <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
-  </div>
+<footer class="text-center py-3">
+  <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
 </footer>
 
-<!-- Bootstrap JS and dependencies -->
+<!-- jQuery and Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
+
