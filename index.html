@@ -44,7 +44,7 @@
     .navbar .nav-link:hover {
       color: #ffc107 !important;
     }
-/* Hero Section */
+   /* Hero Section */
 #hero {
   padding: 100px 0;
   text-align: center;
@@ -52,35 +52,31 @@
   background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
   background-size: cover;
   background-position: center;
-  height: 400px; /* Adjust the height as needed */
+  height: 600px; /* Adjust the height as needed for a larger banner */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #hero h1 {
-  font-size: 3.5rem;
+  font-size: 5rem; /* Increase font size for larger text */
   margin-bottom: 20px;
 }
 
 #hero p {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* Increase font size for larger text */
   margin-bottom: 30px;
+  white-space: nowrap; /* Prevent line break */
+  overflow: hidden; /* Hide overflow */
+  border-right: 0.15em solid orange; /* Typing cursor effect */
+  animation: typing 3.5s steps(30, end);
 }
 
-#animated-text {
-  font-size: 1.5rem; /* Adjust font size */
-  animation: animateText 5s steps(30, end) infinite;
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-@keyframes animateText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
     /* About Section */
     #about {
