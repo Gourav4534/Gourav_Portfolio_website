@@ -14,19 +14,6 @@
   <style>
     /* Custom CSS for Portfolio */
 
-.hero-animation h1 {
-  animation: fade-in 1s ease-in-out forwards;
-}
-
-.hero-animation p::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: reveal 2s steps(13, end) forwards;
-}
-
     /* General Styles */
     body {
       font-family: 'Roboto', sans-serif;
@@ -94,10 +81,39 @@
       margin-bottom: 20px;
     }
 
+    /* Skills Section */
+    #skills {
+      padding: 100px 0;
+      background-color: #f4f4f9;
+    }
+    .skills-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+    .column {
+      flex: 1;
+      padding: 0 15px;
+    }
+    .bars {
+      margin-bottom: 30px;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .bars .line {
+      height: 10px;
+      background-color: #ffc107;
+      width: 0;
+      transition: width 1s;
+    }
+
     /* Projects Section */
     #projects {
       padding: 100px 0;
-      background-color: #f4f4f9;
+      background-color: #fff;
     }
     #projects h2 {
       font-size: 2.5rem;
@@ -134,19 +150,19 @@
     /* Contact Section */
     #contact {
       padding: 100px 0;
-      background-color: #fff;
+      background-color: #f4f4f9;
     }
     #contact h2 {
       font-size: 2.5rem;
       margin-bottom: 50px;
       text-align: center;
     }
-    #contact .social-icon img {
+    .social-icon img {
       width: 40px;
       margin: 0 10px;
       transition: transform 0.3s;
     }
-    #contact .social-icon img:hover {
+    .social-icon img:hover {
       transform: translateY(-5px);
     }
   </style>
@@ -166,6 +182,9 @@
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
@@ -177,7 +196,7 @@
 </nav>
 
 <!-- Hero Section -->
-<section id="hero"  class="hero-animation">
+<section id="hero">
   <div class="container">
     <div class="hero-content">
       <h1>Welcome to My Portfolio</h1>
@@ -195,105 +214,95 @@
       </div>
       <div class="col-md-6">
         <h2>About Me</h2>
-        <p>My name is Gourav Yadav, and I'm a Data Scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
-        <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
-        <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
+        <p>My name is Gourav Yadav, and I'm a Data Scientist passionate about leveraging data to solve complex problems and drive impactful decisions. I specialize in machine learning, deep learning, and statistical analysis.</p>
+        <p>Throughout my career, I have worked on various projects that demonstrate my expertise in Python, SQL, and data manipulation. I am enthusiastic about exploring new technologies and applying them to real-world scenarios.</p>
       </div>
     </div>
   </div>
 </section>
 
-    <!-- skils section -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Hello there! I'm currently diving into the world of AI and Machine Learning & excited to use my skills to solve everyday problems through cool projects </p>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span><h5>Languages </h5></span>
-                            <span> Python, SQL</span>
-                        </div>
-                        <div class="line languages"></div>
-                    </div>
-                    
-                    <div class="bars">
-                        <div class="info">
-                            <span><h5>Data Science</h5></span>
-                            <span>Machine Learning, Deep learning </span>
-                        </div>
-                        <div class="line data"></div>
-                    </div>
-                    <!-- <div class="bars">
-                        <div class="info">
-                            <span><h5>Machine Learning</h5></span>
-                            <span>Supervised & Unsupervised Learning</span>
-                        </div>
-                        <div class="line ml"></div>
-                    </div> -->
-                    <div class="bars">
-                        <div class="info">
-                            <span><h5>Mathametics for ML</h5></span>
-                            <span>Statistics & Probability</span>
-                        </div>
-                        <div class="line maths"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span><h5> MLops Tools </h5></span>
-                            <span>DVC, MLflow, github actions</span>
-                        </div>
-                        <div class="line visualization"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span><h5>Databases</h5></span>
-                            <span> Mysql,Mssql, Mongodb, Postgresql,</span>
-                        </div>
-                        <div class="line database"></div>
-                    </div>
-                </div>
-            </div>
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2>My Skills</h2>
+    <div class="skills-content">
+      <div class="column">
+        <div class="text">My creative skills & experiences.</div>
+        <p>Hello there! I'm currently diving into the world of AI and Machine Learning, excited to use my skills to solve everyday problems through cool projects.</p>
+      </div>
+      <div class="column">
+        <div class="bars">
+          <div class="info">
+            <span><h5>Languages</h5></span>
+            <span>Python, SQL</span>
+          </div>
+          <div class="line languages"></div>
         </div>
-    </section>
-
+        <div class="bars">
+          <div class="info">
+            <span><h5>Data Science</h5></span>
+            <span>Machine Learning, Deep Learning</span>
+          </div>
+          <div class="line data"></div>
+        </div>
+        <div class="bars">
+          <div class="info">
+            <span><h5>Mathematics for ML</h5></span>
+            <span>Statistics & Probability</span>
+          </div>
+          <div class="line maths"></div>
+        </div>
+        <div class="bars">
+          <div class="info">
+            <span><h5>MLops Tools</h5></span>
+            <span>DVC, MLflow, GitHub Actions</span>
+          </div>
+          <div class="line visualization"></div>
+        </div>
+        <div class="bars">
+          <div class="info">
+            <span><h5>Software</h5></span>
+            <span>Google Data Studio, Tableau</span>
+          </div>
+          <div class="line software"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Projects Section -->
 <section id="projects">
   <div class="container">
-    <h2>Projects</h2>
+    <h2>My Projects</h2>
     <div class="row">
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/electric-car-2545290_640.png?raw=true" class="card-img-top project-image" alt="Project 1">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Electric Vehicle Market Analysis</h5>
-            <p class="card-text">This project analyzes trends in Electric Vehicle (EV) registrations based on available data. It examines historical data, forecasts future registrations, and draws insights into the growth of the EV market.</p>
-            <a href="https://github.com/Gourav4534/EVMarketSizeAnalysis" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/Digit%20Recognizer.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
+          <div class="card-body">
+            <h5 class="card-title">Digit Recognizer</h5>
+            <p class="card-text">Implemented a digit recognizer using a deep convolutional neural network in Python.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download%20(3).jpg?raw=true" class="card-img-top project-image" alt="Project 2">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Customer Lifetime Value Prediction</h5>
-            <p class="card-text">This project focuses on predicting the lifetime value of customers for a business based on their historical interactions. The project applies regression techniques to estimate the future value that a customer will bring to the business.</p>
-            <a href="https://github.com/Gourav4534/CodeClause_Data_Science_Internship/tree/main/Task_02" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/Sentiment%20Analysis.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
+          <div class="card-body">
+            <h5 class="card-title">Sentiment Analysis</h5>
+            <p class="card-text">Performed sentiment analysis on Twitter data to understand public opinion on current topics.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/uber.jpg?raw=true" class="card-img-top project-image" alt="Project 3">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Uber Supply-Demand Gap Analysis</h5>
-            <p class="card-text">This project analyzes the supply-demand gap for Uber services. It identifies trends and patterns in customer requests and driver availability to understand the dynamics of trip completion, cancellations, and instances where no cars are available.</p>
-            <a href="https://github.com/Gourav4534/Uber_Supply_Demand_Gap_Analysis_Project" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/Market%20Basket%20Analysis.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
+          <div class="card-body">
+            <h5 class="card-title">Market Basket Analysis</h5>
+            <p class="card-text">Conducted market basket analysis to uncover relationships between products in a retail dataset.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
@@ -301,26 +310,47 @@
   </div>
 </section>
 
-<!-- Contact Me Section -->
+<!-- Contact Section -->
 <section id="contact">
   <div class="container">
     <h2>Contact Me</h2>
-    <div class="row mt-5">
-      <div class="col-md-6 mx-auto text-center">
-        <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/linkedin.png?raw=true" alt="LinkedIn"></a>
-        <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/twitter.png?raw=true" alt="Twitter"></a>
-        <a href="https://github.com/Gourav4534" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/github.png?raw=true" alt="GitHub"></a>
-        <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/medium.png?raw=true" alt="Medium"></a>
-        <a href="mailto:gouravyadav684@gmail.com" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.png?raw=true" alt="Email"></a>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-info">
+          <p>Feel free to contact me via email or social media. I typically respond within 24 hours.</p>
+          <div class="social-icons">
+            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social/github.png?raw=true" alt="GitHub"></a>
+            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social/linkedin.png?raw=true" alt="LinkedIn"></a>
+            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social/twitter.png?raw=true" alt="Twitter"></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Bootstrap JS and dependencies -->
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and Custom JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
