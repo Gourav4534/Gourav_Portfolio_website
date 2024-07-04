@@ -36,6 +36,7 @@
     .navbar .navbar-brand {
       font-size: 1.75rem;
       font-weight: 500;
+      color: #fff;
     }
     .navbar .nav-link {
       font-size: 1.1rem;
@@ -44,75 +45,70 @@
     .navbar .nav-link:hover {
       color: #ffc107 !important;
     }
-   /* Hero Section */
-#hero {
-  padding: 100px 0;
-  text-align: center;
-  color: #fff;
-  background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
-  background-size: cover;
-  background-position: center;
-  height: 600px; /* Adjust the height as needed for a larger banner */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    /* Hero Section */
+    #hero {
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+      background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      height: 600px; /* Adjust the height as needed for a larger banner */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-#hero h1 {
-  font-size: 5rem; /* Increase font size for larger text */
-  margin-bottom: 20px;
-}
+    #hero h1 {
+      font-size: 5rem; /* Increase font size for larger text */
+      margin-bottom: 20px;
+    }
 
-#hero p {
-  font-size: 1.5rem; /* Increase font size for larger text */
-  margin-bottom: 30px;
-  white-space: nowrap; /* Prevent line break */
-  overflow: hidden; /* Hide overflow */
-  border-right: 0.15em solid orange; /* Typing cursor effect */
-  animation: typing 3.5s steps(30, end);
-}
+    #hero p {
+      font-size: 1.5rem; /* Increase font size for larger text */
+      margin-bottom: 30px;
+      white-space: nowrap; /* Prevent line break */
+      overflow: hidden; /* Hide overflow */
+      border-right: 0.15em solid orange; /* Typing cursor effect */
+      animation: typing 3.5s steps(30, end);
+    }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
 
-
-/* About Section */
-#about {
-  padding: 100px 0;
-  background-color: #fff;
-}
-#about .personal-picture {
-  width: 150px; /* Adjust size to be small */
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-#about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #000; /* Text color black */
-}
-#about p {
-  font-size: 1.1rem; /* Increase text size slightly */
-  color: #000; /* Text color black */
-}
-.btn-primary {
-  background-color: #007bff;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.btn-primary:hover {
-  background-color: #0056b3;
-}
-
-
-
+    /* About Section */
+    #about {
+      padding: 100px 0;
+      background-color: #007bff;
+      color: #fff;
+    }
+    #about .personal-picture {
+      width: 250px; /* Adjust size to be larger */
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #about p {
+      font-size: 1.1rem;
+    }
+    .btn-primary {
+      background-color: #ffc107;
+      border: none;
+      color: #343a40;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #ffca28;
+    }
 
     /* Skills Section */
     #skills {
@@ -285,82 +281,84 @@
       </div>
       <div class="col-md-6 text-left">
         <h2>About Me</h2>
-        <p>My name is Gourav Yadav, and I'm a Data Scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
-        <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
-        <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
-        <a href="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/6a782d705a9b5b586ce13f886fee3f0c62c030ad/Gourav_Ds_Resume%20.pdf.pdf" class="btn btn-primary mt-3" download="Gourav_Ds_Resume.pdf">Download Resume</a>
+        <p>I am a passionate Data Scientist with a strong foundation in statistics, machine learning, and data visualization. I enjoy solving complex problems using data-driven approaches and have hands-on experience in Python, SQL, and various ML frameworks.</p>
+        <a href="https://drive.google.com/file/d/1ZZCQwqZTzRPlXcD74sBSJmP8VQOQFj_e/view?usp=sharing" class="btn btn-primary" download>Download Resume</a>
       </div>
     </div>
   </div>
 </section>
-
-
 
 <!-- Skills Section -->
 <section id="skills">
   <div class="container">
-    <h2 class="title">My Skills</h2>
-    <div class="skills-content">
-      </div>
-      <div class="column right">
-        <div class="skill-category">
-          <h4>Languages & Tools</h3>
-          <p>Python | SQL | Git | GitHub</p>
+    <div class="skills">
+      <h2 class="title">Skills</h2>
+      <div class="skills-content">
+        <div class="column">
+          <div class="skills-info">
+            <h5>Python</h5>
+            <div class="line"><span></span></div>
+          </div>
+          <div class="skills-info">
+            <h5>Machine Learning</h5>
+            <div class="line"><span></span></div>
+          </div>
+          <div class="skills-info">
+            <h5>Data Analysis</h5>
+            <div class="line"><span></span></div>
+          </div>
         </div>
-        <div class="skill-category">
-          <h4>Library & Framework</h3>
-          <p>Numpy | Pandas | Matplotlib | Seaborn | Bokeh | Plotly | Scikit-learn | Flask | TensorFlow | PyTorch</p>
-        </div>
-        <div class="skill-category">
-          <h4>Machine Learning</h3>
-          <p>Supervised Learning | Unsupervised Learning | Exploratory Data Analysis (EDA) | Deep Learning | Natural Language Processing (NLP) | Feature Engineering | Computer Vision</p>
-        </div>
-        <div class="skill-category">
-          <h4>Mathematics for ML & DL</h3>
-          <p>Statistics | Probability | Linear Algebra | Calculus</p>
-        </div>
-        <div class="skill-category">
-          <h4>Tools for Data Analysis & Visualization</h3>
-          <p>Tableau | Power BI | Excel</p>
+        <div class="column">
+          <div class="skills-info">
+            <h5>SQL</h5>
+            <div class="line"><span></span></div>
+          </div>
+          <div class="skills-info">
+            <h5>Data Visualization</h5>
+            <div class="line"><span></span></div>
+          </div>
+          <div class="skills-info">
+            <h5>Statistics</h5>
+            <div class="line"><span></span></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- Projects Section -->
 <section id="projects">
   <div class="container">
-    <h2>Projects</h2>
+    <h2 class="title">Projects</h2>
     <div class="row">
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/electric-car-2545290_640.png?raw=true" class="card-img-top project-image" alt="Electric Vehicle Market Analysis">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project-1.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
           <div class="card-body">
-            <h5 class="card-title">Electric Vehicle Market Analysis</h5>
-            <p class="card-text">This project analyzes trends in Electric Vehicle (EV) registrations based on available data. It examines historical data, forecasts future registrations, and draws insights into the growth of the EV market.</p>
-            <a href="https://github.com/Gourav4534/EVMarketSizeAnalysis" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <h5 class="card-title">Predictive Analytics</h5>
+            <p class="card-text">Developed a predictive model to forecast sales trends using machine learning algorithms.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download%20(3).jpg?raw=true" class="card-img-top project-image" alt="Customer Lifetime Value Prediction">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project-2.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
           <div class="card-body">
-            <h5 class="card-title">Customer Lifetime Value Prediction</h5>
-            <p class="card-text">This project focuses on predicting the lifetime value of customers for a business based on their historical interactions. The project applies regression techniques to estimate the future value that a customer will bring to the business.</p>
-            <a href="https://github.com/Gourav4534/CodeClause_Data_Science_Internship/tree/main/Task_02" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <h5 class="card-title">Customer Segmentation</h5>
+            <p class="card-text">Implemented clustering techniques to segment customers based on purchasing behavior.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/uber.jpg?raw=true" class="card-img-top project-image" alt="Uber Supply-Demand Gap Analysis">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project-3.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
           <div class="card-body">
-            <h5 class="card-title">Uber Supply-Demand Gap Analysis</h5>
-            <p class="card-text">This project analyzes the supply-demand gap for Uber services. It identifies trends and patterns in customer requests and driver availability to understand the dynamics of trip completion, cancellations, and instances where no cars are available.</p>
-            <a href="https://github.com/Gourav4534/Uber_Supply_Demand_Gap_Analysis_Project" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <h5 class="card-title">Sentiment Analysis</h5>
+            <p class="card-text">Developed a sentiment analysis model to classify customer reviews as positive or negative.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
@@ -368,32 +366,30 @@
   </div>
 </section>
 
-
-<!-- Contact Me Section -->
+<!-- Contact Section -->
 <section id="contact">
   <div class="container">
-    <h2>Contact Me</h2>
-    <div class="row mt-5">
-      <div class="col-md-6 mx-auto text-center">
-        <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/linkedin.png?raw=true" alt="LinkedIn"></a>
-        <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/twitter.png?raw=true" alt="Twitter"></a>
-        <a href="https://github.com/Gourav4534" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/github.png?raw=true" alt="GitHub"></a>
-        <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/medium.png?raw=true" alt="Medium"></a>
-        <a href="mailto:gouravyadav684@gmail.com" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.png?raw=true" alt="Email"></a>
+    <h2 class="title">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center">
+        <p>I'm currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/in/gourav-yadav-4534/" target="_blank"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/linkedin.png?raw=true" alt="LinkedIn"></a>
+          <a href="mailto:gouravy4534@gmail.com" target="_blank"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/mail.png?raw=true" alt="Email"></a>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- Footer -->
 <footer class="text-center py-3">
   <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
 </footer>
 
-<!-- jQuery and Bootstrap JS -->
+<!-- Bootstrap JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
