@@ -115,74 +115,36 @@
 
 
 
-    /* Skills Section */
-    #skills {
-      padding: 100px 0;
-      background-color: #FFFFFF;
-    }
-    .skills .title {
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-    .skills .skills-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 50px;
-    }
-    .skills .column {
-      flex: 1;
-      margin: 0 10px;
-    }
-    .skills .text {
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-    .skills .bars {
-      margin-bottom: 10px;
-    }
-    .skills .info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .skills .info h5 {
-      font-size: 1rem;
-      font-weight: 500;
-    }
-    .skills .line {
-      height: 8px;
-      background-color: #343a40;
-      border-radius: 20px;
-      position: relative;
-      overflow: hidden;
-    }
-    .skills .line::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #ffc107;
-    }
-    .skills .languages .line::after {
-      width: 90%;
-    }
-    .skills .data .line::after {
-      width: 85%;
-    }
-    .skills .maths .line::after {
-      width: 80%;
-    }
-    .skills .visualization .line::after {
-      width: 75%;
-    }
-    .skills .database .line::after {
-      width: 70%;
-    }
+/* Custom CSS for Skills Section */
+#skills {
+  padding: 100px 0;
+  background-color: #f4f4f9;
+}
+
+.skills-content {
+  margin-top: 50px;
+}
+
+.skill-category {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  color: #343a40; /* Dark color for heading */
+  margin-bottom: 10px;
+}
+
+.skill-category p {
+  font-size: 1.1rem;
+  color: #666; /* Slightly lighter text color */
+  line-height: 1.8;
+}
+
     /* Projects Section */
     #projects {
       padding: 100px 0;
@@ -302,32 +264,36 @@
   <div class="container">
     <h2 class="title">My Skills</h2>
     <div class="skills-content">
-      </div>
-      <div class="column right">
-        <div class="skill-category">
-          <h4>Languages & Tools</h3>
-          <p>Python | SQL | Git | GitHub</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="skill-category">
+            <h3>Languages & Tools</h3>
+            <p>Python | SQL | Git | GitHub</p>
+          </div>
+          <div class="skill-category">
+            <h3>Library & Framework</h3>
+            <p>Numpy | Pandas | Matplotlib | Seaborn | Bokeh | Plotly | Scikit-learn | Flask | TensorFlow | PyTorch</p>
+          </div>
+          <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <p>Supervised Learning | Unsupervised Learning | Exploratory Data Analysis (EDA) | Deep Learning | Natural Language Processing (NLP) | Feature Engineering | Computer Vision</p>
+          </div>
         </div>
-        <div class="skill-category">
-          <h4>Library & Framework</h3>
-          <p>Numpy | Pandas | Matplotlib | Seaborn | Bokeh | Plotly | Scikit-learn | Flask | TensorFlow | PyTorch</p>
-        </div>
-        <div class="skill-category">
-          <h4>Machine Learning</h3>
-          <p>Supervised Learning | Unsupervised Learning | Exploratory Data Analysis (EDA) | Deep Learning | Natural Language Processing (NLP) | Feature Engineering | Computer Vision</p>
-        </div>
-        <div class="skill-category">
-          <h4>Mathematics for ML & DL</h3>
-          <p>Statistics | Probability | Linear Algebra | Calculus</p>
-        </div>
-        <div class="skill-category">
-          <h4>Tools for Data Analysis & Visualization</h3>
-          <p>Tableau | Power BI | Excel</p>
+        <div class="col-md-6">
+          <div class="skill-category">
+            <h3>Mathematics for ML & DL</h3>
+            <p>Statistics | Probability | Linear Algebra | Calculus</p>
+          </div>
+          <div class="skill-category">
+            <h3>Tools for Data Analysis & Visualization</h3>
+            <p>Tableau | Power BI | Excel</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <!-- Projects Section -->
