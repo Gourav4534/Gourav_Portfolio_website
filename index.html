@@ -50,20 +50,33 @@
 
     /* Hero Section */
     #hero {
-      padding: 100px 0;
+      padding: 150px 0;
       text-align: center;
       color: #fff;
       background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
       background-size: cover;
       background-position: center;
+      position: relative;
     }
     #hero h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
       margin-bottom: 20px;
+      animation: fadeInUp 1s ease-in-out;
     }
     #hero p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       margin-bottom: 30px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* About Section */
@@ -251,13 +264,6 @@
             <span>Statistics & Probability</span>
           </div>
           <div class="line maths"></div>
-        </div>
-        <div class="bars">
-          <div class="info">
-            <span><h5>MLops Tools</h5></span>
-            <span>DVC, MLflow, GitHub Actions</span>
-          </div>
-          <div class="line visualization"></div>
         </div>
         <div class="bars">
           <div class="info">
