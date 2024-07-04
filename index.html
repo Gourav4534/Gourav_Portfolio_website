@@ -82,28 +82,22 @@
     /* About Section */
     #about {
       padding: 100px 0;
-      background-color: #1abc9c;
-      color: #fff;
-    }
-    #about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    #about p {
-      font-size: 1.2rem;
+      background-color: #fff;
     }
     #about .personal-picture {
       width: 250px;
       border-radius: 50%;
       margin-bottom: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
     /* Skills Section */
     #skills {
       padding: 100px 0;
-      background-color: #2ecc71;
-      color: #fff;
+      background-color: #fff; /* Changed to white background */
     }
     .skills-content {
       display: flex;
@@ -124,7 +118,7 @@
     }
     .bars .line {
       height: 10px;
-      background-color: #fff;
+      background-color: #ffc107;
       width: 0;
       transition: width 1s;
     }
@@ -132,8 +126,7 @@
     /* Projects Section */
     #projects {
       padding: 100px 0;
-      background-color: #3498db;
-      color: #fff;
+      background-color: #fff;
     }
     #projects h2 {
       font-size: 2.5rem;
@@ -170,8 +163,7 @@
     /* Contact Section */
     #contact {
       padding: 100px 0;
-      background-color: #34495e;
-      color: #fff;
+      background-color: #f4f4f9;
     }
     #contact h2 {
       font-size: 2.5rem;
@@ -185,15 +177,6 @@
     }
     .social-icon img:hover {
       transform: translateY(-5px);
-    }
-    .footer {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #2c3e50;
-      color: #fff;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
     }
   </style>
 </head>
@@ -247,7 +230,7 @@
         <p>My name is Gourav Yadav, and I'm a Data Scientist passionate about leveraging data to solve complex problems and drive impactful decisions. I specialize in machine learning, deep learning, and statistical analysis.</p>
         <p>Throughout my career, I have worked on various projects that demonstrate my expertise in Python, SQL, and data manipulation. I am enthusiastic about exploring new technologies and applying them to real-world scenarios.</p>
         <p>Explore my portfolio for a snapshot of academic excellence and practical application, reflecting my commitment to advancing technology.</p>
-        <p><a href="#">View Resume</a></p>
+        <a href="#" class="btn btn-primary">View Resume</a> <!-- Replace with your resume link -->
       </div>
     </div>
   </div>
@@ -259,7 +242,7 @@
     <h2>My Skills</h2>
     <div class="skills-content">
       <div class="column">
-        <div class="text">Creative Skills & Experiences</div>
+        <div class="text">My creative skills & experiences.</div>
         <p>Hello there! I'm currently diving into the world of AI and Machine Learning, excited to use my skills to solve everyday problems through cool projects.</p>
       </div>
       <div class="column">
@@ -268,21 +251,21 @@
             <span><h5>Languages</h5></span>
             <span>Python, SQL</span>
           </div>
-          <div class="line" style="width: 90%;"></div>
+          <div class="line languages"></div>
         </div>
         <div class="bars">
           <div class="info">
-            <span><h5>Machine Learning</h5></span>
-            <span>Deep Learning, Neural Networks</span>
+            <span><h5>Data Science</h5></span>
+            <span>Machine Learning, Deep Learning</span>
           </div>
-          <div class="line" style="width: 80%;"></div>
+          <div class="line data"></div>
         </div>
         <div class="bars">
           <div class="info">
-            <span><h5>Data Visualization</h5></span>
-            <span>Matplotlib, Seaborn</span>
+            <span><h5>Mathematics for ML</h5></span>
+            <span>Statistics, Linear Algebra</span>
           </div>
-          <div class="line" style="width: 85%;"></div>
+          <div class="line mathematics"></div>
         </div>
       </div>
     </div>
@@ -294,33 +277,33 @@
   <div class="container">
     <h2>My Projects</h2>
     <div class="row">
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img class="card-img-top project-image" src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/images.jpg?raw=true" alt="Project Image">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/Untitled%20design(4).png?raw=true" class="card-img-top project-image" alt="Project Image">
           <div class="card-body">
-            <h5 class="card-title">Data Science Project 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero elit, at pharetra lectus placerat in.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
+            <h5 class="card-title">project 1</h5>
+            <p class="card-text">This project explores the fundamental concepts of AI and data science, aiming to revolutionize the future of technology.</p>
+            <a href="#" class="btn btn-primary">View Project</a> <!-- Replace with your project link -->
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img class="card-img-top project-image" src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/4439395.jpg?raw=true" alt="Project Image">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/Untitled%20design(5).png?raw=true" class="card-img-top project-image" alt="Project Image">
           <div class="card-body">
-            <h5 class="card-title">Data Science Project 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero elit, at pharetra lectus placerat in.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
+            <h5 class="card-title">project 2</h5>
+            <p class="card-text">This project aims to implement cutting-edge AI techniques to automate processes and enhance efficiency.</p>
+            <a href="#" class="btn btn-primary">View Project</a> <!-- Replace with your project link -->
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img class="card-img-top project-image" src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/4103044.jpg?raw=true" alt="Project Image">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/Untitled%20design(6).png?raw=true" class="card-img-top project-image" alt="Project Image">
           <div class="card-body">
-            <h5 class="card-title">Data Science Project 3</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero elit, at pharetra lectus placerat in.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
+            <h5 class="card-title">project 3</h5>
+            <p class="card-text">This project demonstrates the potential of data science in revolutionizing industries and driving business insights.</p>
+            <a href="#" class="btn btn-primary">View Project</a> <!-- Replace with your project link -->
           </div>
         </div>
       </div>
@@ -333,13 +316,30 @@
   <div class="container">
     <h2>Contact Me</h2>
     <div class="row">
-      <div class="col-md-6 mx-auto text-center">
-        <p>If you're interested in collaborating on a project or just want to say hello, feel free to reach out to me using the contact form or through my social media profiles.</p>
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6 text-center">
+        <p>Feel free to reach out to me on social media:</p>
         <div class="social-icon">
-          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Instagram_Logo.jpg?raw=true" alt="Instagram"></a>
-          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/facebook_icon.png?raw=true" alt="Facebook"></a>
-          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/twitter_Logo.png?raw=true" alt="Twitter"></a>
-          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Gmail.png?raw=true" alt="Email"></a>
+          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/5064855.png?raw=true" alt="Facebook"></a>
+          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/5064860.png?raw=true" alt="Twitter"></a>
+          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/5064861.png?raw=true" alt="Instagram"></a>
+          <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/5064862.png?raw=true" alt="LinkedIn"></a>
         </div>
       </div>
     </div>
@@ -347,15 +347,14 @@
 </section>
 
 <!-- Footer -->
-<footer class="footer">
-  <div class="container">
+<footer>
+  <div class="container text-center py-4">
     <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
   </div>
 </footer>
 
-<!-- Bootstrap JS, Popper.js, jQuery -->
+<!-- jQuery and Bootstrap Bundle JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
