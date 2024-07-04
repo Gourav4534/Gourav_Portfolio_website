@@ -1,223 +1,65 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal -->
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gourav's Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    /* Custom CSS for Portfolio */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://rajarshi12321.github.io/rajarshi_portfolio/images/logo_img.png" />
+    <meta property="og:title" content="Check Out My Portfolio!!" />
+    <meta property="og:description" content="I'm Rajarshi Roy, an aspiring Data Scientist and Computer Science student at Kalyani Government Engineering College. Dive into my journey of innovation and excellence in technology. Explore my projects and achievements in advancing the digital world." />
 
-    /* General Styles */
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: 700;
-    }
-    p {
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
 
-    /* Navigation Bar */
-    .navbar {
-      transition: background-color 0.3s ease-in-out;
-      background-color: #343a40;
-    }
-    .navbar .navbar-brand {
-      font-size: 1.75rem;
-      font-weight: 500;
-    }
-    .navbar .nav-link {
-      font-size: 1.1rem;
-      color: #fff !important;
-    }
-    .navbar .nav-link:hover {
-      color: #ffc107 !important;
-    }
+    <title>Gourav Yadav</title>
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.ico" />
+    <link rel="stylesheet" href="port.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
 
-    /* Hero Section */
-    #hero {
-      padding: 150px 0;
-      text-align: center;
-      color: #fff;
-      background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-    #hero h1 {
-      font-size: 4rem;
-      margin-bottom: 20px;
-      animation: fadeInUp 1s ease-in-out;
-    }
-    #hero p {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-      animation: fadeInUp 1s ease-in-out;
-    }
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* About Section */
-    #about {
-      padding: 100px 0;
-      background-color: #fff;
-    }
-    #about .personal-picture {
-      width: 250px;
-      border-radius: 50%;
-      margin-bottom: 30px;
-    }
-    #about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    /* Skills Section */
-    #skills {
-      padding: 100px 0;
-      background-color: #fff; /* Changed to white background */
-    }
-    .skills-content {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 50px;
-    }
-    .column {
-      flex: 1;
-      padding: 0 15px;
-    }
-    .bars {
-      margin-bottom: 30px;
-    }
-    .info {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-    }
-    .bars .line {
-      height: 10px;
-      background-color: #ffc107;
-      width: 0;
-      transition: width 1s;
-    }
-
-    /* Projects Section */
-    #projects {
-      padding: 100px 0;
-      background-color: #fff;
-    }
-    #projects h2 {
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-    #projects .card {
-      border: none;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    #projects .card:hover {
-      transform: translateY(-10px);
-    }
-    #projects .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-    }
-    #projects .card-body {
-      padding: 20px;
-    }
-    #projects .card-title {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
-    #projects .card-text {
-      flex-grow: 1;
-    }
-
-    /* Contact Section */
-    #contact {
-      padding: 100px 0;
-      background-color: #f4f4f9;
-    }
-    #contact h2 {
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-    .social-icon img {
-      width: 40px;
-      margin: 0 10px;
-      transition: transform 0.3s;
-    }
-    .social-icon img:hover {
-      transform: translateY(-5px);
-    }
-  </style>
 </head>
+
 <body>
-
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Gourav's Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-  </div>
-</nav>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <!-- <li><a h" class="menu-btn">Work Experience</a></li> -->
+                <li><a href="#contact" class="menu-btn">Contact Me</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-<!-- Hero Section -->
-<section id="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm Gourav Yadav, A Passionate Data Scientist.</p>
-    </div>
-  </div>
-</section>
+    <!-- home section start -->
+    <section class="home" id="home" >
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Gourav Yadav</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
 
+            </div>
+        </div>
+    </section>
+
+    
 <!-- About Section -->
 <section id="about">
   <div class="container">
@@ -227,50 +69,78 @@
       </div>
       <div class="col-md-6">
         <h2>About Me</h2>
-        <p>My name is Gourav Yadav, and I'm a Data Scientist passionate about leveraging data to solve complex problems and drive impactful decisions. I specialize in machine learning, deep learning, and statistical analysis.</p>
-        <p>Throughout my career, I have worked on various projects that demonstrate my expertise in Python, SQL, and data manipulation. I am enthusiastic about exploring new technologies and applying them to real-world scenarios.</p>
-        <p>Explore my portfolio for a snapshot of academic excellence and practical application, reflecting my commitment to advancing technology.</p>
-        <a href="#" class="btn btn-primary">View Resume</a> < https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/Gourav_Ds_Resume%20.pdf.pdf >
+        <p>My name is Gourav Yadav, and I'm a Data Scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
+        <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
+        <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Skills Section -->
-<section id="skills">
-  <div class="container">
-    <h2>My Skills</h2>
-    <div class="skills-content">
-      <div class="column">
-        <div class="text">My creative skills & experiences.</div>
-        <p>Hello there! I'm currently diving into the world of AI and Machine Learning, excited to use my skills to solve everyday problems through cool projects.</p>
-      </div>
-      <div class="column">
-        <div class="bars">
-          <div class="info">
-            <span><h5>Languages</h5></span>
-            <span>Python, SQL</span>
-          </div>
-          <div class="line languages"></div>
+  
+    <!-- skils section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>Hello there! I'm currently diving into the world of AI and Machine Learning & excited to use my skills to solve everyday problems through cool projects </p>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span><h5>Languages </h5></span>
+                            <span> Python, SQL</span>
+                        </div>
+                        <div class="line languages"></div>
+                    </div>
+                    
+                    <div class="bars">
+                        <div class="info">
+                            <span><h5>Data Science</h5></span>
+                            <span>Machine Learning, Deep learning, LLMs</span>
+                        </div>
+                        <div class="line data"></div>
+                    </div>
+                    <!-- <div class="bars">
+                        <div class="info">
+                            <span><h5>Machine Learning</h5></span>
+                            <span>Supervised & Unsupervised Learning</span>
+                        </div>
+                        <div class="line ml"></div>
+                    </div> -->
+                    <div class="bars">
+                        <div class="info">
+                            <span><h5>Mathametics for ML</h5></span>
+                            <span>Statistics & Probability</span>
+                        </div>
+                        <div class="line maths"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span><h5> MLops Tools </h5></span>
+                            <span>DVC, MLflow, github actions</span>
+                        </div>
+                        <div class="line visualization"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span><h5>Databases</h5></span>
+                            <span> Mysql, Mongodb, Postgresql, Pinecone</span>
+                        </div>
+                        <div class="line database"></div>
+                    </div>                    
+                    <div class="bars">
+                        <div class="info">
+                            <span><h5> Gen AI Framework and Models </h5></span>
+                            <span> LlamaIndex, Langchain,<br> Google Gemini </span>
+                        </div>
+                        <div class="line database"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bars">
-          <div class="info">
-            <span><h5>Data Science</h5></span>
-            <span>Machine Learning, Deep Learning</span>
-          </div>
-          <div class="line data"></div>
-        </div>
-        <div class="bars">
-          <div class="info">
-            <span><h5>Mathematics for ML</h5></span>
-            <span>Statistics, Linear Algebra</span>
-          </div>
-          <div class="line mathematics"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 <!-- Projects Section -->
 <section id="projects">
@@ -310,8 +180,7 @@
     </div>
   </div>
 </section>
-
-
+   
 <!-- Contact Me Section -->
 <section id="contact">
   <div class="container">
@@ -328,15 +197,12 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer>
-  <div class="container text-center py-4">
-    <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
-  </div>
-</footer>
+    <!-- footer section start -->
+    <footer>
+        <span>Created By Rajarshi Roy</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+    </footer>
 
-<!-- jQuery and Bootstrap Bundle JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="port.js"></script>
 </body>
+
 </html>
