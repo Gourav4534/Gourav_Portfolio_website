@@ -36,7 +36,6 @@
     .navbar .navbar-brand {
       font-size: 1.75rem;
       font-weight: 500;
-      color: #fff;
     }
     .navbar .nav-link {
       font-size: 1.1rem;
@@ -81,25 +80,26 @@
     /* About Section */
     #about {
       padding: 100px 0;
-      background-color: #007bff;
-      color: #fff;
+      background-color: #fff;
     }
     #about .personal-picture {
-      width: 250px; /* Adjust size to be larger */
+      width: 200px; /* Increased size */
       border-radius: 50%;
       margin-bottom: 30px;
     }
     #about h2 {
       font-size: 2.5rem;
       margin-bottom: 20px;
+      color: #000; /* Text color black */
     }
     #about p {
-      font-size: 1.1rem;
+      font-size: 1.1rem; /* Increase text size slightly */
+      color: #000; /* Text color black */
     }
     .btn-primary {
-      background-color: #ffc107;
+      background-color: #007bff;
       border: none;
-      color: #343a40;
+      color: #fff;
       padding: 10px 20px;
       text-decoration: none;
       font-size: 1rem;
@@ -107,7 +107,7 @@
       transition: background-color 0.3s ease;
     }
     .btn-primary:hover {
-      background-color: #ffca28;
+      background-color: #0056b3;
     }
 
     /* Skills Section */
@@ -279,10 +279,10 @@
       <div class="col-md-6 text-center">
         <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/Untitled%20design.png?raw=true" class="img-fluid personal-picture" alt="Personal Picture">
       </div>
-      <div class="col-md-6 text-left">
+      <div class="col-md-6">
         <h2>About Me</h2>
-        <p>I am a passionate Data Scientist with a strong foundation in statistics, machine learning, and data visualization. I enjoy solving complex problems using data-driven approaches and have hands-on experience in Python, SQL, and various ML frameworks.</p>
-        <a href="https://drive.google.com/file/d/1ZZCQwqZTzRPlXcD74sBSJmP8VQOQFj_e/view?usp=sharing" class="btn btn-primary" download>Download Resume</a>
+        <p>I am a passionate data scientist with a strong background in physics, chemistry, and mathematics. I am skilled in Python, SQL, machine learning, and data visualization. Currently, I am enhancing my skills in data science and AI. I believe in continuous learning and applying innovative ideas to solve real-world problems.</p>
+        <a href="resume.pdf" download class="btn btn-primary">Download Resume</a>
       </div>
     </div>
   </div>
@@ -291,35 +291,51 @@
 <!-- Skills Section -->
 <section id="skills">
   <div class="container">
-    <div class="skills">
-      <h2 class="title">Skills</h2>
-      <div class="skills-content">
-        <div class="column">
-          <div class="skills-info">
-            <h5>Python</h5>
-            <div class="line"><span></span></div>
-          </div>
-          <div class="skills-info">
-            <h5>Machine Learning</h5>
-            <div class="line"><span></span></div>
-          </div>
-          <div class="skills-info">
-            <h5>Data Analysis</h5>
-            <div class="line"><span></span></div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="skills-info">
-            <h5>SQL</h5>
-            <div class="line"><span></span></div>
-          </div>
-          <div class="skills-info">
-            <h5>Data Visualization</h5>
-            <div class="line"><span></span></div>
-          </div>
-          <div class="skills-info">
-            <h5>Statistics</h5>
-            <div class="line"><span></span></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="skills">
+          <h2 class="title">Skills</h2>
+          <div class="skills-content">
+            <div class="column">
+              <div class="skills-info">
+                <h4>Data Science</h4>
+                <div class="line">
+                  <div class="line-inner" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skills-info">
+                <h4>Machine Learning</h4>
+                <div class="line">
+                  <div class="line-inner" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skills-info">
+                <h4>Python</h4>
+                <div class="line">
+                  <div class="line-inner" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="skills-info">
+                <h4>SQL</h4>
+                <div class="line">
+                  <div class="line-inner" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="skills-info">
+                <h4>Data Visualization</h4>
+                <div class="line">
+                  <div class="line-inner" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="skills-info">
+                <h4>Mathematics</h4>
+                <div class="line">
+                  <div class="line-inner" style="width: 65%;"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -330,34 +346,34 @@
 <!-- Projects Section -->
 <section id="projects">
   <div class="container">
-    <h2 class="title">Projects</h2>
+    <h2 class="text-center">Projects</h2>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4 col-md-6">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project-1.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project1.jpg?raw=true" class="card-img-top project-image" alt="Project 1">
           <div class="card-body">
-            <h5 class="card-title">Predictive Analytics</h5>
-            <p class="card-text">Developed a predictive model to forecast sales trends using machine learning algorithms.</p>
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Description of Project 1.</p>
             <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4 col-md-6">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project-2.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project2.jpg?raw=true" class="card-img-top project-image" alt="Project 2">
           <div class="card-body">
-            <h5 class="card-title">Customer Segmentation</h5>
-            <p class="card-text">Implemented clustering techniques to segment customers based on purchasing behavior.</p>
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Description of Project 2.</p>
             <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4 col-md-6">
         <div class="card">
-          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project-3.jpg?raw=true" class="card-img-top project-image" alt="Project Image">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/projects/project3.jpg?raw=true" class="card-img-top project-image" alt="Project 3">
           <div class="card-body">
-            <h5 class="card-title">Sentiment Analysis</h5>
-            <p class="card-text">Developed a sentiment analysis model to classify customer reviews as positive or negative.</p>
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Description of Project 3.</p>
             <a href="#" class="btn btn-primary">View Project</a>
           </div>
         </div>
@@ -369,13 +385,28 @@
 <!-- Contact Section -->
 <section id="contact">
   <div class="container">
-    <h2 class="title">Contact Me</h2>
+    <h2 class="text-center">Contact Me</h2>
     <div class="row">
-      <div class="col-md-6 offset-md-3 text-center">
-        <p>I'm currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
-        <div class="social-icon">
-          <a href="https://www.linkedin.com/in/gourav-yadav-4534/" target="_blank"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/linkedin.png?raw=true" alt="LinkedIn"></a>
-          <a href="mailto:gouravy4534@gmail.com" target="_blank"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/contact/mail.png?raw=true" alt="Email"></a>
+      <div class="col-md-8 offset-md-2">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+        <div class="mt-4">
+          <div class="social-icon text-center">
+            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/linkedin.png?raw=true" alt="LinkedIn"></a>
+            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/github.png?raw=true" alt="GitHub"></a>
+            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/twitter.png?raw=true" alt="Twitter"></a>
+            <a href="#"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/social_icons/medium.png?raw=true" alt="Medium"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -383,13 +414,15 @@
 </section>
 
 <!-- Footer -->
-<footer class="text-center py-3">
-  <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
+<footer class="py-4 text-center">
+  <div class="container">
+    <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
+  </div>
 </footer>
 
-<!-- Bootstrap JS, Popper.js, and jQuery -->
+<!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
